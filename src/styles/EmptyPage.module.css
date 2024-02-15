@@ -1,0 +1,36 @@
+.container {
+    align-items: center;
+    margin: 0 20px 30px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+}
+
+.empty {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: 2px dashed #fe5d42;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.empty p {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.empty a {
+    color: #fe5d42;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.empty svg {
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+

@@ -1,5 +1,6 @@
 import ShoppingCard from "../components/ShoppingCard";
 import { useCart } from "../context/CartContext";
+import EmptyPage from "./EmptyPage";
 
 const CheckoutPage = () => {
 
@@ -12,6 +13,7 @@ const CheckoutPage = () => {
     return (
         <div>
             <div>
+                {!state.selectedItems.length && <EmptyPage /> }
                 {state.selectedItems.map((item) => (
                     <ShoppingCard  key= {item.id} data= {item} clickHandler={clickHandler} />
                 ))}
